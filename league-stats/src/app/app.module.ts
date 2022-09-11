@@ -8,6 +8,12 @@ import { ConfigComponent } from './config/config.component';
 import { ChampComponent } from './champ/champ.component';
 import { SummonerComponent } from './summoner/summoner.component';
 import { HomeComponent } from './home/home.component';
+import { ChampionPageComponent } from './champion-page/champion-page.component';
+import { RouterModule } from '@angular/router';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -15,15 +21,23 @@ import { HomeComponent } from './home/home.component';
     ConfigComponent,
     ChampComponent,
     SummonerComponent,
-    HomeComponent
+    HomeComponent,
+    ChampionPageComponent,
+    NavbarComponent
   ],
   imports: [
+    RouterModule.forRoot([]),
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    MatToolbarModule,
+    BrowserAnimationsModule,
+    MatButtonModule
+    
+
   ],
-  providers: [],
+  providers: [ChampComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -41,7 +41,12 @@ export class SummonerComponent implements OnInit {
 
     )
 
-console.log(this.puuID+this.icon)  }
+
+  
+  }
+
+
+
 
 
 }

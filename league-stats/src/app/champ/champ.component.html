@@ -4,7 +4,13 @@
     </label>  
   </form>
 
-  <p class="text" > {{this.name }}</p>
+  <div class="champ-icon" *ngFor="let champion of champList">
+    <a  [routerLink]="['/champions',champion]">
+      <img src="http://ddragon.leagueoflegends.com/cdn/12.17.1/img/champion/{{champion}}.png"  style="width:50px">
+    </a>
+  </div>
+
+   <p class="text" > {{this.name }}</p>
   <img class="icon" src="http://ddragon.leagueoflegends.com/cdn/12.17.1/img/champion/{{this.champName}}.png">
   <p class="text" > {{this.title1 }}</p>
- <p class="text"> {{this.lore }}</p>
+ <p class="text"> {{this.lore }}</p> 

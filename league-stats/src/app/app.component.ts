@@ -2,6 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { ConfigService } from './config.service';
 import { Observable } from 'rxjs';
 import { Champion, Champions } from './champion';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 
 @Component({
   selector: 'app-root',
