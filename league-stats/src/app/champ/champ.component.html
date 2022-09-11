@@ -1,0 +1,10 @@
+<form class="form" (change)="onSubmit()"> 
+    <label for="text" class="label">
+      <input type="text" class="input" [(ngModel)]="champName" name="champName" placeholder="Enter champ">
+    </label>  
+  </form>
+
+  <p class="text" > {{this.name }}</p>
+  <img class="icon" src="http://ddragon.leagueoflegends.com/cdn/12.17.1/img/champion/{{this.champName}}.png">
+  <p class="text" > {{this.title1 }}</p>
+ <p class="text"> {{this.lore }}</p>
